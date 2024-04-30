@@ -22,5 +22,9 @@ public class ProgramaPrincipal {
                 LocalDate.of(2000,2,15),
                 new BigDecimal("1234.56")                );
         beltrano.apresentarse();
+        System.out.println();
+
+        System.out.println(fulano);
+        System.out.println(beltrano);
     }
 }
