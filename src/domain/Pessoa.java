@@ -4,16 +4,41 @@ import java.time.LocalDate;
 
 
 public class Pessoa {
-   public String nome;
-    public String endereco;
-    public LocalDate nascimento;
-    public BigDecimal salario;
+   private String nome;
+   private String endereco;
+   private LocalDate nascimento;
+   private BigDecimal salario;
 
     public void apresentarse() {
         System.out.println("Nome......: " + this.nome);
         System.out.println("Endereço..: " + this.endereco);
         System.out.println("Nascimento: " + this.nascimento);
         System.out.println("Salário...: " + this.salario);
+    }
+
+    public String getNome() {
+       return this.nome;
+    }
+    public void setNome(String nome) {
+       this.nome = nome;
+    }
+    public String getEndereco() {
+        return this.endereco;
+    }
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+    public LocalDate getNascimento() {
+        return this.nascimento;
+    }
+    public void setNascimento(LocalDate nascimento) {
+        this.nascimento = nascimento;
+    }
+    public BigDecimal getSalario() {
+        return this.salario;
+    }
+    public void setSalario(BigDecimal salario) {
+        this.salario = salario;
     }
 }
 
