@@ -16,5 +16,11 @@ public class ProgramaPrincipal {
 
         fulano.apresentarse();
 
+        System.out.println();
+
+        Pessoa beltrano = new Pessoa(" Beltrano da Silva", "rua dos programadores,666",
+                LocalDate.of(2000,2,15),
+                new BigDecimal("1234.56")                );
+        beltrano.apresentarse();
     }
 }

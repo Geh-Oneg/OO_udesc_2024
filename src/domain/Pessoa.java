@@ -9,6 +9,17 @@ public class Pessoa {
    private LocalDate nascimento;
    private BigDecimal salario;
 
+    //construtor padrao
+   public Pessoa() {}
+
+//construtor parametrizado
+   public Pessoa(String nome, String endereco, LocalDate nascimento, BigDecimal salario) {
+       this.nome = nome;
+       this.endereco = endereco;
+       this.nascimento = nascimento;
+       this.salario = salario;
+   }
+
     public void apresentarse() {
         System.out.println("Nome......: " + this.nome);
         System.out.println("Endereço..: " + this.endereco);
@@ -17,26 +28,33 @@ public class Pessoa {
     }
 
     public String getNome() {
-       return this.nome;
+        return nome;
     }
+
     public void setNome(String nome) {
-       this.nome = nome;
+        this.nome = nome;
     }
+
     public String getEndereco() {
-        return this.endereco;
+        return endereco;
     }
+
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
     public LocalDate getNascimento() {
-        return this.nascimento;
+        return nascimento;
     }
+
     public void setNascimento(LocalDate nascimento) {
         this.nascimento = nascimento;
     }
+
     public BigDecimal getSalario() {
-        return this.salario;
+        return salario;
     }
+
     public void setSalario(BigDecimal salario) {
         this.salario = salario;
     }
